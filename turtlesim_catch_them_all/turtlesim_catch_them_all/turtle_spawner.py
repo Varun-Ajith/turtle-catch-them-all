@@ -85,7 +85,7 @@ class TurtleSpawnerNode(Node):
         request.name = turtle_name
 
         future = client.call_async(request)
-        future.add_done_callback(partial(self.callback_call_spawn, turtle_name=turtle_name))
+        future.add_done_callback(partial(self.callback_call_kill, turtle_name=turtle_name))
     
     def callback_call_kill(self, future, turtle_name):
         try:
