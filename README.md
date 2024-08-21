@@ -1,7 +1,9 @@
-# Turtle-catch-them-all
+# Turtle catch them all
 
 ## Overview
 The Turtlesim Catch Them All project is a ROS 2 package that creates a fun simulation where a turtle in the Turtlesim environment chases and catches other turtles that spawn randomly. The package includes nodes for spawning turtles, controlling the main turtle, and managing the catching process.
+
+![turtle](turtle.gif)
 
 ### Features
 - **Turtle Spawner**: Randomly spawns turtles in the Turtlesim environment at specified intervals.
