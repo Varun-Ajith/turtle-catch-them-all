@@ -29,7 +29,8 @@ class TurtleControllerNode(Node):
             "turtle1/pose",
             self.callback_turtle_pose,
             10)
-        self.alive_turtles_subscriber_ = self.create_subscription(TurtleArray,
+        self.alive_turtles_subscriber_ = self.create_subscription(
+            TurtleArray,
             "alive_turtles", 
             self.callback_alive_turtles,
             10)
