@@ -12,18 +12,26 @@ The Turtlesim Catch Them All project is a ROS 2 package that creates a fun simul
 
 ### Installation
 1. Clone the Repository: 
-   ```git clone https://github.com/Varun-Ajith/turtlesim_catch_them_all.git ```
-2. Build the Package:
+   ```
+   git clone https://github.com/Varun-Ajith/turtlesim_catch_them_all.git
+    ```
+3. Build the Package:
 Navigate to your ROS 2 workspace and build the package:
-```colcon build --packages-select turtlesim_catch_them_all```
-3. Source the Workspace:
+```
+colcon build --packages-select turtlesim_catch_them_all --symlink-install
+```
+5. Source the Workspace:
 After building, source your workspace:
-```source install/setup.bash```
+```
+source ~/.bashrc
+```
 
 ## Usage
 ### Launch the Simulation
 To launch the Turtlesim node along with the custom nodes for spawning and controlling the turtles, use the following command:
-```ros2 launch turtlesim_catch_them_all turtle_catch_them_all.launch.py```
+```
+ros2 launch turtlesim_catch_them_all turtle_catch_them_all.launch.py
+```
 ### Node Descriptions
 1. **turtle_spawner.py**:
 - Spawns turtles at random positions within the Turtlesim environment.
